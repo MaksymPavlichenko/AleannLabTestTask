@@ -17,7 +17,10 @@ const JobList = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [itemOffset, setItemOffset] = useState(0);
   const endOffset = itemOffset + ITEMS_PER_PAGE;
+  const currentJobs = jobs.slice(itemOffset, endOffset);
   const pageCount = Math.ceil(jobs.length / ITEMS_PER_PAGE);
+
+
 
   useEffect(() => {
     setIsLoading(true);
@@ -43,6 +46,12 @@ const JobList = () => {
     const newOffset = (event.selected * ITEMS_PER_PAGE) % jobs.length;
     setItemOffset(newOffset);
   };
+
+  const JobsOnCurrentPage = ({ currentJobs }) => {
+    if (!currentJobs) {
+      return null;
+    }
+  }
   
   return (
     <>
@@ -55,6 +64,7 @@ const JobList = () => {
           </JobsItem>
         ))}
       </JobsList>
+      <JobsOnCurrentPage currentJobs={currentJobs} />
       <Pagination handlePageClick={handlePageClick} pageCount={pageCount} />
     </>
   );

@@ -162,7 +162,7 @@ const DetailedStructure = ({ job }) => {
        </ContactsMap>
     </ContactsWrap>
    
-    <BackLink href='/AleannLabTestTask'>
+    <BackLink href='/aleann-lab-test-task'>
       <IconArrow width={10} height={18} />
       <BackText>Return to job board</BackText>
     </BackLink>
