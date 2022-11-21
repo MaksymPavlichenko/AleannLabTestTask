@@ -42,7 +42,7 @@ const JobList = () => {
     return null;
   }
 
-  const handlePageClick = event => {
+  const handleClick = event => {
     const newOffset = (event.selected * ITEMS_PER_PAGE) % jobs.length;
     setItemOffset(newOffset);
   };
@@ -58,14 +58,15 @@ const JobList = () => {
       {isLoading && <Loader />}
       {error && <ErrorMsg />}
       <JobsList>
-        {jobs.map(job => (
+      {currentJobs &&
+        currentJobs.map(job => (
           <JobsItem key={job.id}>
             <JobCard job={job}></JobCard>
           </JobsItem>
         ))}
       </JobsList>
       <JobsOnCurrentPage currentJobs={currentJobs} />
-      <Pagination handlePageClick={handlePageClick} pageCount={pageCount} />
+      <Pagination handleClick={handleClick} pageCount={pageCount} />
     </>
   );
 };
