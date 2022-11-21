@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/react-homework-template/static/css/main.7acaea2f.css",
-    "main.js": "/react-homework-template/static/js/main.07d3183d.js",
-    "index.html": "/react-homework-template/index.html",
-    "main.7acaea2f.css.map": "/react-homework-template/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/react-homework-template/static/js/main.07d3183d.js.map"
+    "main.css": "/aleann-lab-test-task/static/css/main.fdcbd06e.css",
+    "main.js": "/aleann-lab-test-task/static/js/main.49bfc89e.js",
+    "index.html": "/aleann-lab-test-task/index.html",
+    "static/media/share.svg": "/aleann-lab-test-task/static/media/share.209d9c4daedb293a753a1cef91e0ac5d.svg",
+    "static/media/arrow.svg": "/aleann-lab-test-task/static/media/arrow.81b0f26cb6486aa14408fc44c9104536.svg",
+    "static/media/bookmark.svg": "/aleann-lab-test-task/static/media/bookmark.e7ceb55da78467886ac014a9080d31d9.svg",
+    "static/media/location.svg": "/aleann-lab-test-task/static/media/location.1c093ca173a538132f1ce31ab6296061.svg",
+    "main.fdcbd06e.css.map": "/aleann-lab-test-task/static/css/main.fdcbd06e.css.map",
+    "main.49bfc89e.js.map": "/aleann-lab-test-task/static/js/main.49bfc89e.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/css/main.fdcbd06e.css",
+    "static/js/main.49bfc89e.js"
   ]
 }
